@@ -31,55 +31,16 @@ def create_new_offer(offers, products, customers):
     choosing products, and calculating totals.
     """
     # Omogućite unos kupca
-
     # Izračunajte sub_total, tax i total
     # Dodajte novu ponudu u listu offers
     pass
 
 
 # TODO: Implementirajte funkciju za upravljanje proizvodima.
-customers = []
 def manage_products(products):
     """
     Allows the user to add a new product or modify an existing product.
     """
-    while True:
-        print('\nIzbornik za upravljanje kupcima:')
-        print('1. Dodajte novog kupca')
-        print('2. Pregledajte sve kupce')
-        print('3. Izlaz')
-
-        choice = input('Unesite svoj izbor (1 - 3): ')
-    # Omogućite korisniku izbor između dodavanja ili izmjene proizvoda
-        if choice == '1':
-            name = input('Unesite naziv novog kupca: ')
-            email = input('Unesite e-mail novog kupca: ')
-            customer_id = input('Unesite ID broj novog kupca: ')
-            
-            new_customer = {
-                'name': name,
-                'email': email,
-                'vat_id': customer_id
-            }
-            
-            customers.append(new_customer)
-            print(f'Novi kupac {name} dodan!')
-    # Za dodavanje: unesite podatke o proizvodu i dodajte ga u listu products
-        elif choice == '2':   
-            if customers:
-                print('\nLista kupaca:')
-                for x, customer in enumerate(customers, 1):
-                    print(f'{x}. Ime: {customer['name']}, Email: {customer['email']}, ID broj: {customer['vat_id']}')
-            else:
-                print('Kupac nije pronađen!')
-
-        elif choice == '3':
-            print('Izlaz iz aplikacije')
-            break
-        
-        else:
-            print('Krivi odabir. Molimo unesite 1, 2, or 3.')
-    # Za izmjenu: selektirajte proizvod i ažurirajte podatke
     # Omogućite korisniku izbor između dodavanja ili izmjene proizvoda
     # Za dodavanje: unesite podatke o proizvodu i dodajte ga u listu products
     # Za izmjenu: selektirajte proizvod i ažurirajte podatke
